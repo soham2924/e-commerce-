@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15</p>
+                <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div id="totalPrice">Total: $0</div>
+        <button id="checkoutBtn">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Shop</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
